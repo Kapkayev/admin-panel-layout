@@ -1,0 +1,443 @@
+@import "./variables.sass"
+
+/* ###### BUTONS STYLES ###### */
+
+.button
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	outline: none
+	border: none
+	text-decoration: none
+	color: var(--color-white-100)
+	backdrop-filter: blur(12.5px)
+	transition: 0.2s
+	transition-property: text-shadow, box-shadow, background
+
+	&:hover
+		text-shadow: 0px 0px 5px #FFFFFF
+		box-shadow: inset 0px 0px 25px var(--color-white-01)
+
+	&:active
+		background: var(--color-white-25)
+
+	&_size_s
+		width: 100%
+		max-width: 100px
+		height: 50px
+
+	&_size_m
+		width: 100%
+		max-width: 160px
+		height: 60px
+
+	&_size_l
+		width: 100%
+		max-width: 400px
+		height: 60px
+
+	&_filled
+		background: var(--color-black-75)
+
+	&_outlined
+		border-radius: 2px
+		border: 1px solid var(--color-white-100)
+
+		&:hover
+			border: 2px solid var(--color-white-100)
+
+/* ###### BUTONS STYLES ###### */
+
+
+/* ###### SEARCH INPUT STYLES ###### */
+
+.search-input
+	.search-input__input
+		width: 400px
+		height: 40px
+		background: var(--color-white-05)
+		outline: none
+		border: none
+		padding: 10px 30px 10px 15px
+		color: var(--color-white-75)
+		background-image: url("../assets/icons/search.svg")
+		background-repeat: no-repeat
+		background-position: right 12px center
+
+		&::placeholder
+			font-family: var(--font-family)
+			color: var(--color-white-25)
+
+/* ###### SEARCH INPUT STYLES ###### */
+
+
+/* ###### COMPUTER STATUSES STYLES ###### */
+
+.computer-item
+	width: 48px
+	height: 48px
+	display: flex
+	justify-content: center
+	align-items: center
+	position: relative
+	border-radius: 2px
+	color: var(--color-white-100)
+	font-size: 16px
+	line-height: 20px
+	cursor: pointer
+	transition-property: text-shadow, border, font-weight
+
+	&:hover
+		text-shadow: 0px 0px 5px var(--color-white-100), 0px 0px 10px var(--color-white-100)
+		box-shadow: inset 0px 0px 25px var(--color-white-05)
+
+	&:active
+		border: 4px solid transparent
+		border-image: var(--color-purple)
+		border-image-slice: 1
+
+		&::before
+			top: -8px
+			right: -8px
+
+		&::after
+			top: -8.2px
+			left: -8.2px
+
+	&_status_free
+		border: 1px solid var(--color-white-100)
+
+	&_status_off
+		border: 1px solid var(--color-white-100)
+		opacity: 0.25
+
+	&_status_vip
+		border: 1px solid var(--color-white-100)
+		border-radius: 50px
+
+		&:active, &.computer-item_status_selected
+			border: none
+			border-image: unset
+			border-image-slice: unset
+			background-image: url("../assets/icons/circle.svg")
+			background-size: cover
+			background-position: center center
+
+			&::before
+				top: -4px
+				right: -4px
+
+			&::after
+				top: -4px
+				left: -4.2px
+
+	&_status_active
+		background: var(--color-white-100)
+		color: var(--color-black-100)
+		font-weight: 700
+
+		&:hover
+			box-shadow: 0px 0px 5px var(--color-white-100), inset 0px 0px 8px var(--color-white-100)
+
+	&_status_error
+		border: 1px solid var(--color-white-100)
+		&::before
+			content: ''
+			width: 16px
+			height: 16px
+			background: var(--color-red)
+			border-radius: 50px
+			position: absolute
+			top: -5px
+			right: -5px
+			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5)
+
+	&_status_ends
+		border: 1px solid var(--color-white-100)
+		&::before
+			content: ''
+			width: 16px
+			height: 16px
+			background: var(--color-yellow)
+			border-radius: 50px
+			position: absolute
+			top: -5px
+			right: -5px
+			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5)
+
+	&_status_blocked
+		border: 1px solid var(--color-white-100)
+		&::after
+			content: ''
+			width: 16px
+			height: 16px
+			background: var(--color-gray)
+			border-radius: 50px
+			position: absolute
+			top: -5px
+			left: -5px
+			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5)
+			background-image: url("../assets/icons/dot.svg")
+			background-repeat: no-repeat
+			background-position: center center
+
+	&_status_selected
+		border: 4px solid transparent
+		border-image: var(--color-purple)
+		border-image-slice: 1
+
+		&::before
+			top: -8px
+			right: -8px
+
+		&::after
+			top: -8px
+			left: -8px
+
+/* ###### COMPUTER STATUSES STYLES ###### */
+
+
+/* ###### FORM ELEMENTS STYLES ###### */
+
+.input
+	box-sizing: border-box
+	min-width: 100px
+	height: 60px
+	background: var(--color-black-75)
+	border: none
+	outline: none
+	border-radius: 4px
+	padding: 18px 20px
+
+	font-family: var(--font-family)
+	color: var(--color-white-50)
+	font-weight: 300
+	font-size: 20px
+	line-height: 24px
+
+	&::-webkit-outer-spin-button, &::-webkit-inner-spin-button, &::-webkit-calendar-picker-indicator
+		-webkit-appearance: none
+		display: none
+
+	&_size_xs
+		width: 145px
+
+	&_size_s
+		width: 160px
+
+	&_size_m
+		width: 200px
+
+	&_size_l
+		width: 260px
+
+	&_size_xl
+		width: 100%
+
+
+.select
+	box-sizing: border-box
+	height: 60px
+	background: var(--color-black-75)
+	border: none
+	outline: none
+	border-radius: 4px
+
+	background-image: url("../assets/icons/arrow_bottom.svg")
+	background-repeat: no-repeat
+	background-position: right 12px center
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	padding: 18px 20px
+
+	font-family: var(--font-family)
+	color: var(--color-white-50)
+	font-weight: 300
+	font-size: 20px
+	line-height: 24px
+
+	&::-ms-expand
+		display: none
+
+	&_size_s
+		width: 160px
+
+	&_size_m
+		width: 180px
+
+	&_size_l
+		width: 200px
+
+.checkbox
+	width: 20px
+	height: 20px
+	position: relative
+	background: var(--color-black-75)
+	border-radius: 2px
+	display: flex
+	justify-content: center
+	align-items: center
+
+	input
+		display: none
+
+		&:checked + span
+			box-shadow: 0px 0px 5px var(--color-white-100), inset 0px 0px 8px var(--color-white-100)
+
+		&:checked ~ label
+			box-shadow: 0px 0px 5px var(--color-white-100), 0px 0px 10px var(--color-white-100), inset 0px 0px 8px var(--color-white-100)
+
+			&::before
+				visibility: visible
+
+	label
+		width: 100%
+		height: 100%
+		display: block
+		background: transparent
+		cursor: pointer
+		visibilty: hidden
+		position: absolute
+		z-index: 10
+
+		&::before
+			content: ''
+			width: 10px
+			height: 10px
+			display: inline-block
+			border-radius: 2px
+			background: var(--color-white-100)
+			box-shadow: 0px 0px 5px var(--color-white-100), inset 0px 0px 8px var(--color-white-100)
+			visibility: hidden
+			position: absolute
+			left: 5px
+			top: 5px
+
+		&:hover
+			box-shadow: inset 0px 0px 5px var(--color-white-25)
+
+/* ###### FORM ELEMENTS STYLES ###### */
+
+
+/* ###### SMALL TABLE STYLES ###### */
+
+.info-table
+	width: 100%
+	color: var(--color-white-50)
+	font-weight: 300
+	font-size: 20px
+	line-height: 24px
+
+	.info-table__title
+		width: 100%
+		display: flex
+		justify-content: center
+
+	.info-table__row
+		width: 100%
+		display: flex
+		justify-content: center
+
+	.info-table__column
+		width: 100%
+		padding: 4px 8px
+		border: 0.5px solid var(--color-white-25)
+
+/* ###### SMALL TABLE STYLES ###### */
+
+
+/* ###### TABLE STYLES ###### */
+
+.table
+	width: 100%
+	height: auto
+
+	.table__title, .table__body
+		display: flex
+		flex-direction: column
+
+	.table__row
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 0px 10px
+		transition: 0.2s
+		opacity: 0.3
+
+		&.active-row
+			opacity: 1
+
+			&:hover
+				background: var(--color-white-25)
+
+				.table__button
+					cursor: pointer
+
+				.table__button-active-indicator
+					img:first-child
+						filter: blur(4px)
+
+			.table__button-active-indicator
+				background: var(--color-white-25)
+
+		&.blocked-row
+			opacity: 1
+			
+			.text
+				color: var(--color-blocked)
+
+
+	.table__row-title
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		padding: 0px 10px
+
+	.table__column
+		&_size_xs
+			width: 100%
+			max-width: 60px
+
+		&_size_s
+			width: 100%
+			max-width: 120px
+
+		&_size_m
+			width: 100%
+			max-width: 180px
+
+		&_size_l
+			width: 100%
+			max-width: 200px
+
+		&_size_xl
+			width: 100%
+			max-width: 260px
+
+		&_padding_none
+			padding: 0px 0px
+
+		&_padding_m
+			padding: 12px 4px
+
+	.table__button
+		width: 100%
+		max-width: 50px
+		height: 50px
+		position: relative
+		display: inline-flex
+		justify-content: center
+		align-items: center
+
+		img
+			max-width: 24px
+			max-height: 24px
+
+
+	.table__button-active-indicator
+		img:first-child
+				position: absolute
+				transition: 0.2s
+
+/* ###### TABLE STYLES ###### */

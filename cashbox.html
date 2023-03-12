@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin — Manage Cashbox</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+	<!-- UI-kit -->
+	<link rel="stylesheet"  href="css/library.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet"  href="css/magnific-popup.css">
+	<!-- Styles -->
+	<link rel="stylesheet"  href="css/main.css">
+	<link rel="stylesheet"  href="css/media.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="header">
+		<a href="#" class="logo header__logo">
+			<img alt="Logotype" src="assets/logo.svg">
+		</a>
+		<div class="search-input header__search-input">
+			<input 
+				class="search-input__input" 
+				type="text" 
+				name="search-input"
+				placeholder="Search" 
+			>
+		</div>
+		<div class="text text_color_white_translucent text_size_m text_weight_lighter header__text">
+			Club №3 Address Batyra st. 115/1
+		</div>
+		<div class="text text_color_white_translucent text_size_l text_weight_lighter header__text">
+			29.01.2023, 18:17
+		</div>
+		<a href="#" class="link-icon header__link-icon">
+			<div class="link-icon__icon">
+				<img alt="Profile" src="assets/icons/profile.svg">
+				<img alt="Profile" src="assets/icons/profile.svg">
+			</div>
+			<span class="link-icon__link">Profile</span>
+		</a>
+	</div>
+	<div class="main">
+		<div class="sidebar">
+			<nav class="sidebar__sidebar-menu">
+				<ul>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Club" src="assets/icons/club.svg">
+								<img alt="Club" src="assets/icons/club.svg">
+							</div>
+							<span class="link-icon__link">Club</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Shop" src="assets/icons/shop.svg">
+								<img alt="Shop" src="assets/icons/shop.svg">
+							</div>
+							<span class="link-icon__link">Shop</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Stats" src="assets/icons/stats.svg">
+								<img alt="Stats" src="assets/icons/stats.svg">
+							</div>
+							<span class="link-icon__link">Stats</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon active-sidebar-link">
+							<div class="link-icon__icon">
+								<img alt="Cashbox" src="assets/icons/cashbox.svg">
+								<img alt="Cashbox" src="assets/icons/cashbox.svg">
+							</div>
+							<span class="link-icon__link">Cashbox</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="link-icon">
+				<div class="link-icon__icon">
+					<img alt="Log out" src="assets/icons/logout.svg">
+					<img alt="Log out" src="assets/icons/logout.svg">
+				</div>
+				<span class="link-icon__link">Log out</span>
+			</a>
+		</div>
+		<div class="content">
+			<div class="page-cashbox disactive-page-cashbox">
+				<!-- Следует добавить disactive-page-cashbox класс для использования маски перекрывающей весь контент. -->
+				<!-- Используется в случае когда сессия не началась. -->
+
+				<div class="disactive-mask"></div>
+
+				<div class="page-cashbox__row-01">
+					<div class="page-cashbox-headers-01">
+						<div class="page-cashbox-headers-actions">
+							<a href="#" class="button button_size_m button_filled">Start session</a>
+							<a href="#" class="button button_size_m button_filled">Open cashbox</a>
+						</div>
+					</div>
+					<div class="page-cashbox-headers-02">
+						<div class="search-input header__search-input">
+							<input 
+								class="search-input__input" 
+								type="text" 
+								name="search-input"
+								placeholder="Search" 
+							>
+						</div>
+						<div class="page-cashbox__information-01">
+							<div class="session-info">
+								<p class="text text_color_white_translucent text_size_m text_weight_lighter">Session finished 23:59</p>
+								<p class="text text_color_white_translucent text_size_m text_weight_lighter">27 January 2023</p>
+							</div>
+							<div class="page-cashbox__summ">
+								<p class="text text_color_white text_size_l">$ 100</p>
+							</div>
+							<a href="#" class="button button_size_m button_filled">Finish session</a>
+						</div>
+					</div>
+				</div>
+				<div class="page-cashbox__row-02">
+					<div class="page-cashbox__column-01">
+
+						<div class="payment-block">
+							<div>
+								<div class="payment-block__header">
+									<p class="text text_color_white_translucent text_size_l text_weight_lighter">New payment</p>
+								</div>
+								<div class="payment-block__content">
+									<div class="payment-block__form-01">
+										<div class="payment-block__form-column">
+											<div class="payment-block__form-column-input">
+												<p class="text text_color_white text_weight_lighter text_size_m">Phone number, e-mail or login</p>
+												<input type="text" name="status" placeholder="" class="input input_size_xl">
+											</div>
+											<div class="payment-block__form-column-input">
+												<div>
+													<p class="text text_color_white text_weight_lighter text_size_m">Computer ID</p>
+													<p class="text text_color_white_translucent text_weight_lighter text_size_m">Shop, product</p>
+												</div>
+												
+												<input type="text" name="status" placeholder="ID" class="input input_size_xl">
+												<p class="text text_color_white_translucent text_weight_lighter text_size_m">Current user - Homelander</p>
+											</div>
+										</div>
+									</div>
+									<div class="payment-block__form-02">
+										<div class="payment-block__form-column">
+											<div class="payment-block__form-column-input">
+												<p class="text text_color_white text_weight_lighter text_size_m">Sum</p>
+												<input type="text" name="status" placeholder="Sum" class="input input_size_xl">
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="payment-block__check-number">
+								<p class="text text_color_white text_weight_lighter text_size_m">Check number</p>
+								<p class="text text_color_white text_weight_lighter text_size_md">0000000141 </p>
+							</div>
+							<div class="payment-block__footer">
+								<a href="#" class="button button_size_m button_outlined">Clear</a>
+								<a href="#" class="button button_size_m button_outlined">Apply</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="page-cashbox__column-02">
+						<div class="page-cashbox__information-02">
+							<div class="date">
+								<p class="date__current_now disactive">Now</p>
+								<p class="date__current-day-from">Jan 26</p>
+								<p class="date__current-day-to">Jan 30</p>
+								<div class="date__picker">
+									<div class="date__picker-icon">
+										<img alt="calendar-icon" src="assets/icons/calendar.svg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="table page-cashbox__table">
+							<div class="table__title">
+								<div class="table__row-title">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">№</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Time</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">User</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Check number</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Target</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Status</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Manage</p>
+									</div>
+								</div>
+							</div>
+							<div class="table__body">
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">3</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">4</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">User</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">6</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">User</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Large</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">6</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">8</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Canceled</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">9</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">10</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">19.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">11</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">19.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Canceled</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">12</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">19.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">3</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">4</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">User</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">6</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">User</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Large</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">6</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">8</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Canceled</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">9</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">20.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">10</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">19.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">11</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">19.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Canceled</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>
+
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">12</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">19.01 21:00</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Homelander</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">0000000001</p>
+									</div>
+									<div class="table__column table__column_size_l table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">Tariff: Small</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">OK</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_m table__column_padding_none">
+										
+									</div>
+								</div>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JavaScript -->
+<script src="script/javascript.js"></script>
+
+</body>
+</html>

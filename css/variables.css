@@ -1,0 +1,23 @@
+:root {
+  --font-family: "Montserrat";
+  --color-white-100: rgba(255, 255, 255, 1);
+  --color-white-75: rgba(255, 255, 255, 0.75);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --color-white-25: rgba(255, 255, 255, 0.25);
+  --color-white-15: rgba(255, 255, 255, 0.15);
+  --color-white-05: rgba(255, 255, 255, 0.05);
+  --color-white-01: rgba(255, 255, 255, 0.01);
+  --color-black-100: rgba(0, 0, 0, 1);
+  --color-black-75: rgba(0, 0, 0, 0.75);
+  --color-black-50: rgba(0, 0, 0, 0.5);
+  --color-black-25: rgba(0, 0, 0, 0.25);
+  --color-purple: linear-gradient(95.62deg, #AD00FF 6.11%, #641ED7 100%);
+  --color-red: #FF0000;
+  --color-yellow: #FFEE00;
+  --color-gray: #666666;
+  --color-dark-red: #583838;
+  --color-dark-green: #425537;
+  --color-dark-blue: #3C485A;
+  --color-blocked: var(--color-red);
+  --height-header: 80px;
+}

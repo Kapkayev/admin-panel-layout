@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin — Manage Club User</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+	<!-- UI-kit -->
+	<link rel="stylesheet"  href="css/library.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet"  href="css/magnific-popup.css">
+	<!-- Styles -->
+	<link rel="stylesheet"  href="css/main.css">
+	<link rel="stylesheet"  href="css/media.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="header">
+		<a href="#" class="logo header__logo">
+			<img alt="Logotype" src="assets/logo.svg">
+		</a>
+		<div class="search-input header__search-input">
+			<input 
+				class="search-input__input" 
+				type="text" 
+				name="search-input"
+				placeholder="Search" 
+			>
+		</div>
+		<div class="text text_color_white_translucent text_size_m text_weight_lighter header__text">
+			Club №3 Address Batyra st. 115/1
+		</div>
+		<div class="text text_color_white_translucent text_size_l text_weight_lighter header__text">
+			29.01.2023, 18:17
+		</div>
+		<a href="#" class="link-icon header__link-icon">
+			<div class="link-icon__icon">
+				<img alt="Profile" src="assets/icons/profile.svg">
+				<img alt="Profile" src="assets/icons/profile.svg">
+			</div>
+			<span class="link-icon__link">Profile</span>
+		</a>
+	</div>
+	<div class="main">
+		<div class="sidebar">
+			<nav class="sidebar__sidebar-menu">
+				<ul>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon active-sidebar-link">
+							<div class="link-icon__icon">
+								<img alt="Club" src="assets/icons/club.svg">
+								<img alt="Club" src="assets/icons/club.svg">
+							</div>
+							<span class="link-icon__link">Club</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Shop" src="assets/icons/shop.svg">
+								<img alt="Shop" src="assets/icons/shop.svg">
+							</div>
+							<span class="link-icon__link">Shop</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Stats" src="assets/icons/stats.svg">
+								<img alt="Stats" src="assets/icons/stats.svg">
+							</div>
+							<span class="link-icon__link">Stats</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Cashbox" src="assets/icons/cashbox.svg">
+								<img alt="Cashbox" src="assets/icons/cashbox.svg">
+							</div>
+							<span class="link-icon__link">Cashbox</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="link-icon">
+				<div class="link-icon__icon">
+					<img alt="Log out" src="assets/icons/logout.svg">
+					<img alt="Log out" src="assets/icons/logout.svg">
+				</div>
+				<span class="link-icon__link">Log out</span>
+			</a>
+		</div>
+		<div class="content">
+			<div class="page-club-user">
+				<div class="page-club-user__row-01">
+					<div class="menu-tabs">
+						<ul>
+							<li>
+								<a href="#" class="menu-tabs__link">Map</a>
+							</li>
+							<li>
+								<a href="#" class="menu-tabs__link">Zones</a>
+							</li>
+							<li>
+								<a href="#" class="menu-tabs__link active-link">Users</a>
+							</li>
+							<li>
+								<a href="#" class="menu-tabs__link">Roles</a>
+							</li>
+							<li>
+								<a href="#" class="menu-tabs__link">Tariffs</a>
+							</li>
+							<li>
+								<a href="#" class="menu-tabs__link">Payment</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="page-club-user__row-02">
+					<div class="page-club-user__column-01">
+
+						<div class="manage-user">
+							<div class="manage-user__header">
+								<p class="text text_color_white_translucent text_size_l text_weight_lighter">Manage user</p>
+							</div>
+							<div class="manage-user__content">
+								<div class="manage-user__role">
+									<div class="manage-user__content-title">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Role</p>
+									</div>
+									<div class="manage-user__role-menu">
+										<a href="#" class="link-icon manage-user__role-menu__link-icon">
+											<span class="link-icon__link">Standard</span>
+										</a>
+										<a href="#" class="link-icon manage-user__role-menu__link-icon">
+											<span class="link-icon__link">Kid</span>
+										</a>
+										<a href="#" class="link-icon manage-user__role-menu__link-icon">
+											<span class="link-icon__link">Internet <br> only</span>
+										</a>
+										<a href="#" class="link-icon manage-user__role-menu__link-icon">
+											<span class="link-icon__link">Admin</span>
+										</a>
+										<a href="#" class="link-icon manage-user__role-menu__link-icon">
+											<span class="link-icon__link">VIP</span>
+										</a>
+										<a href="#" class="link-icon manage-user__role-menu__link-icon">
+											<span class="link-icon__link">Kid <br> VIP</span>
+										</a>
+										<a href="#" class="link-icon manage-user__role-menu__link-icon">
+											<span class="link-icon__link">Test</span>
+										</a>
+										<a href="#" class="link-icon manage-user__role-menu__link-icon">
+											<span class="link-icon__link">Test</span>
+										</a>
+									</div>
+								</div>
+								<div class="manage-user__manage">
+									<div class="manage-user__content-title">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Manage</p>
+									</div>
+									<div class="manage-user__manage-menu">
+										<a href="#" class="link-icon manage-user__manage-menu__link-icon">
+											<div class="link-icon__icon">
+												<img alt="Block" src="assets/icons/block.svg">
+												<img alt="Block" src="assets/icons/block.svg">
+											</div>
+											<span class="link-icon__link">Block</span>
+										</a>
+										<a href="#" class="link-icon manage-user__manage-menu__link-icon">
+											<div class="link-icon__icon">
+												<img alt="Log out" src="assets/icons/logout.svg">
+												<img alt="Log out" src="assets/icons/logout.svg">
+											</div>
+											<span class="link-icon__link">Log out</span>
+										</a>
+										<a href="#" class="link-icon manage-user__manage-menu__link-icon">
+											<div class="link-icon__icon">
+												<img alt="Book" src="assets/icons/book.svg">
+												<img alt="Book" src="assets/icons/book.svg">
+											</div>
+											<span class="link-icon__link">Book</span>
+										</a>
+										<a href="#" class="link-icon manage-user__manage-menu__link-icon">
+											<div class="link-icon__icon">
+												<!-- <img alt="Club" src="assets/icons/club.svg">
+												<img alt="Club" src="assets/icons/club.svg"> -->
+											</div>
+											<span class="link-icon__link">User <br> admin <br> (no shell)</span>
+										</a>
+									</div>
+								</div>
+								<div class="manage-user__controls">
+									<div class="manage-user__controls-buttons">
+										<a href="#" class="button button_size_l button_outlined">Give a warning</a>
+										<div class="add-time manage-user__add-time">
+											<select class="select select_size_m">
+												<option>- 5</option>
+												<option>- 10</option>
+												<option>+ 5</option>
+												<option>+ 10</option>
+											</select>
+											<a href="#" class="button button_size_l button_outlined">Add time</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="page-club-user__column-02">
+						<div class="page-club-user__user-column-01">
+							<div class="user-block">
+								<div class="user-block__main">
+									<div class="user-block__main-photo">
+										<img alt="Avatar" src="assets/photo.jpg">
+									</div>
+									<div class="user-block__main-text">
+										<div class="user-block__main-text-01">
+											<p class="text text_color_white text_size_l text_weight_lighter">Homelander</p>
+											<p class="text text_color_white text_size_l user-block__main-text__text">id 22334</p>
+										</div>
+										<div class="user-block__main-text-02">
+											<p class="text text_color_white_translucent text_size_xs text_weight_lighter">Online (20)</p>
+										</div>
+										<div class="user-block__main-text-03">
+											<p class="text text_color_white text_size_md">$ 14</p>
+											<p class="text text_color_white text_size_md">0: 25</p>
+										</div>
+									</div>
+								</div>
+								<div class="user-block__info">
+									<div class="user-block__info-item">
+										<p class="text text_color_white text_size_m text_weight_lighter">Level</p>
+										<p class="text text_color_white_shadow text_size_l text_weight_medium">2</p>
+									</div>
+									<div class="user-block__info-item">
+										<p class="text text_color_white text_size_m text_weight_lighter">Rating</p>
+										<p class="text text_color_white_shadow text_size_l text_weight_medium">320</p>
+									</div>
+									<div class="user-block__info-item">
+										<p class="text text_color_white text_size_m text_weight_lighter">Played</p>
+										<p class="text text_color_white_shadow text_size_l text_weight_medium">103h</p>
+									</div>
+									<div class="user-block__info-item">
+										<p class="text text_color_white text_size_m text_weight_lighter">Achievements</p>
+										<p class="text text_color_white_shadow text_size_l text_weight_medium">24</p>
+									</div>
+									<div class="user-block__info-item">
+										<p class="text text_color_white text_size_m text_weight_lighter">Battle wins</p>
+										<p class="text text_color_white_shadow text_size_l text_weight_medium">2</p>
+									</div>
+								</div>
+								<div class="user-block__details">
+									<p class="text text_color_white_translucent text_size_m text_weight_lighter">Alexey Fistashkin, 16 y.o.</p>
+									<p class="text text_color_white_translucent text_size_m text_weight_lighter">+77083339829</p>
+									<p class="text text_color_white_translucent text_size_m text_weight_lighter">homelanderalex@yandex.ru</p>
+								</div>
+								<div class="user-block__details">
+									<p class="text text_color_white_translucent text_size_m text_weight_lighter">Last login - 25.01.2023, 18:30</p>
+									<p class="text text_color_white_translucent text_size_m text_weight_lighter">Last Computer - 100</p>
+									<p class="text text_color_white_translucent text_size_m text_weight_lighter">Registered - 11.01.2023, 16:40 </p>
+								</div>
+							</div>
+						</div>
+						<div class="page-club-user__user-column-02">
+							<div class="page-club-user__table-title">
+								<p class="text text_color_white_translucent text_size_md text_weight_lighter">Balance history</p>
+							</div>
+							<div class="table page-club-user__table">
+								<div class="table__title">
+									<div class="table__row-title">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">№</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">Date</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">$</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">Target</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">Pay</p>
+										</div>
+									</div>
+								</div>
+								<div class="table__body">
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">1</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">2</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">3</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">1</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">2</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">3</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">1</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">2</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">3</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">1</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">2</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+									<div class="table__row active-row">
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white_translucent text_size_m text_weight_lighter">3</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">23.01.2023 23:13</p>
+										</div>
+										<div class="table__column table__column_size_xs table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">16</p>
+										</div>
+										<div class="table__column table__column_size_m table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">+ Balance</p>
+										</div>
+										<div class="table__column table__column_size_s table__column_padding_m">
+											<p class="text text_color_white text_size_m text_weight_lighter">Balance</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JavaScript -->
+<script src="script/javascript.js"></script>
+
+</body>
+</html>

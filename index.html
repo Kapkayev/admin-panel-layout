@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin — Manage Club Map</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+	<!-- UI-kit -->
+	<link rel="stylesheet"  href="css/library.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet"  href="css/magnific-popup.css">
+	<!-- Styles -->
+	<link rel="stylesheet"  href="css/main.css">
+	<link rel="stylesheet"  href="css/media.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="header">
+		<a href="#" class="logo header__logo">
+			<img alt="Logotype" src="assets/logo.svg">
+		</a>
+		<div class="search-input header__search-input">
+			<input 
+				class="search-input__input" 
+				type="text" 
+				name="search-input"
+				placeholder="Search" 
+			>
+		</div>
+		<div class="text text_color_white_translucent text_size_m text_weight_lighter header__text">
+			Club №3 Address Batyra st. 115/1
+		</div>
+		<div class="text text_color_white_translucent text_size_l text_weight_lighter header__text">
+			29.01.2023, 18:17
+		</div>
+		<a href="#" class="link-icon header__link-icon">
+			<div class="link-icon__icon">
+				<img alt="Profile" src="assets/icons/profile.svg">
+				<img alt="Profile" src="assets/icons/profile.svg">
+			</div>
+			<span class="link-icon__link">Profile</span>
+		</a>
+	</div>
+	<div class="main">
+		<div class="sidebar">
+			<nav class="sidebar__sidebar-menu">
+				<ul>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon active-sidebar-link">
+							<div class="link-icon__icon">
+								<img alt="Club" src="assets/icons/club.svg">
+								<img alt="Club" src="assets/icons/club.svg">
+							</div>
+							<span class="link-icon__link">Club</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Shop" src="assets/icons/shop.svg">
+								<img alt="Shop" src="assets/icons/shop.svg">
+							</div>
+							<span class="link-icon__link">Shop</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Stats" src="assets/icons/stats.svg">
+								<img alt="Stats" src="assets/icons/stats.svg">
+							</div>
+							<span class="link-icon__link">Stats</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Cashbox" src="assets/icons/cashbox.svg">
+								<img alt="Cashbox" src="assets/icons/cashbox.svg">
+							</div>
+							<span class="link-icon__link">Cashbox</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="link-icon">
+				<div class="link-icon__icon">
+					<img alt="Log out" src="assets/icons/logout.svg">
+					<img alt="Log out" src="assets/icons/logout.svg">
+				</div>
+				<span class="link-icon__link">Log out</span>
+			</a>
+		</div>
+		<div class="content">
+			<div class="page-club-map">
+				<div class="page-club-map__column-01">
+					<div class="page-club-map__row">
+						<div class="menu-tabs">
+							<ul>
+								<li>
+									<a href="#" class="menu-tabs__link active-link">Map</a>
+								</li>
+								<li>
+									<a href="#" class="menu-tabs__link">Zones</a>
+								</li>
+								<li>
+									<a href="#" class="menu-tabs__link">Users</a>
+								</li>
+								<li>
+									<a href="#" class="menu-tabs__link">Roles</a>
+								</li>
+								<li>
+									<a href="#" class="menu-tabs__link">Tariffs</a>
+								</li>
+								<li>
+									<a href="#" class="menu-tabs__link">Payment</a>
+								</li>
+							</ul>
+						</div>
+						<div class="text text_color_white text_size_m">
+							Club №3 Address Batyra st. 115/1
+						</div>
+					</div>
+					<div class="page-club-map__row page-club-map__row_indent_40">
+						<div class="indicator-label">
+							<div class="indicator-label__item">
+								<div class="indicator-label__icon indicator-label__icon_status_off"></div>
+								<p class="indicator-label__caption">Off - 1</p>
+							</div>
+							<div class="indicator-label__item">
+								<div class="indicator-label__icon indicator-label__icon_status_vip"></div>
+								<p class="indicator-label__caption">VIP - 5</p>
+							</div>
+							<div class="indicator-label__item">
+								<div class="indicator-label__icon indicator-label__icon_status_free"></div>
+								<p class="indicator-label__caption">Clear - 247</p>
+							</div>
+							<div class="indicator-label__item">
+								<div class="indicator-label__icon indicator-label__icon_status_active"></div>
+								<p class="indicator-label__caption">Use - 2</p>
+							</div>
+							<div class="indicator-label__item">
+								<div class="indicator-label__icon indicator-label__icon_status_error"></div>
+								<p class="indicator-label__caption">Error - 1</p>
+							</div>
+							<div class="indicator-label__item">
+								<div class="indicator-label__icon indicator-label__icon_status_ends"></div>
+								<p class="indicator-label__caption">5 min - 1</p>
+							</div>
+							<div class="indicator-label__item">
+								<div class="indicator-label__icon indicator-label__icon_status_blocked"></div>
+								<p class="indicator-label__caption">Blocked - 1</p>
+							</div>
+						</div>
+
+						<div class="date">
+							<p class="date__current_now">Now</p>
+							<p class="date__current-time">00:00</p>
+							<p class="date__current-day">Jan 26</p>
+							<div class="date__picker">
+								<div class="date__picker-icon">
+									<img alt="clock-icon" src="assets/icons/clock.svg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page-club-map__row">
+						<div class="computer-block">
+							<div class="computer-item computer-item_status_free">1</div>
+							<div class="computer-item computer-item_status_off">2</div>
+							<div class="computer-item computer-item_status_off">3</div>
+							<div class="computer-item computer-item_status_free">4</div>
+							<div class="computer-item computer-item_status_free">5</div>
+							<div class="computer-item computer-item_status_free">6</div>
+							<div class="computer-item computer-item_status_free">7</div>
+							<div class="computer-item computer-item_status_free">8</div>
+							<div class="computer-item computer-item_status_free">9</div>
+							<div class="computer-item computer-item_status_free">10</div>
+
+							<div class="computer-item computer-item_status_free">11</div>
+							<div class="computer-item computer-item_status_free">12</div>
+							<div class="computer-item computer-item_status_free">13</div>
+							<div class="computer-item computer-item_status_free">14</div>
+							<div class="computer-item computer-item_status_free">15</div>
+							<div class="computer-item computer-item_status_vip">16</div>
+							<div class="computer-item computer-item_status_vip">17</div>
+							<div class="computer-item computer-item_status_vip">18</div>
+							<div class="computer-item computer-item_status_vip">19</div>
+							<div class="computer-item computer-item_status_vip">20</div>
+
+							<div class="computer-item computer-item_status_free">21</div>
+							<div class="computer-item computer-item_status_active">22</div>
+							<div class="computer-item computer-item_status_active">23</div>
+							<div class="computer-item computer-item_status_free">24</div>
+							<div class="computer-item computer-item_status_free">25</div>
+							<div class="computer-item computer-item_status_free">26</div>
+							<div class="computer-item computer-item_status_free">27</div>
+							<div class="computer-item computer-item_status_active computer-item_status_ends">28</div>
+							<div class="computer-item computer-item_status_free">29</div>
+							<div class="computer-item computer-item_status_active computer-item_status_ends">30</div>
+
+							<div class="computer-item computer-item_status_free">31</div>
+							<div class="computer-item computer-item_status_free">32</div>
+							<div class="computer-item computer-item_status_free">33</div>
+							<div class="computer-item computer-item_status_free">34</div>
+							<div class="computer-item computer-item_status_free">35</div>
+							<div class="computer-item computer-item_status_free">36</div>
+							<div class="computer-item computer-item_status_free">37</div>
+							<div class="computer-item computer-item_status_free">38</div>
+							<div class="computer-item computer-item_status_free">39</div>
+							<div class="computer-item computer-item_status_free">40</div>
+
+							<div class="computer-item computer-item_status_free">41</div>
+							<div class="computer-item computer-item_status_active">42</div>
+							<div class="computer-item computer-item_status_active">43</div>
+							<div class="computer-item computer-item_status_free">44</div>
+							<div class="computer-item computer-item_status_free">45</div>
+							<div class="computer-item computer-item_status_free">46</div>
+							<div class="computer-item computer-item_status_free">47</div>
+							<div class="computer-item computer-item_status_free">48</div>
+							<div class="computer-item computer-item_status_free">49</div>
+							<div class="computer-item computer-item_status_free">50</div>
+
+							<div class="computer-item computer-item_status_free">51</div>
+							<div class="computer-item computer-item_status_free">52</div>
+							<div class="computer-item computer-item_status_error">53</div>
+							<div class="computer-item computer-item_status_error">54</div>
+							<div class="computer-item computer-item_status_free">55</div>
+							<div class="computer-item computer-item_status_free">56</div>
+							<div class="computer-item computer-item_status_blocked">57</div>
+							<div class="computer-item computer-item_status_blocked">58</div>
+							<div class="computer-item computer-item_status_blocked">59</div>
+							<div class="computer-item computer-item_status_free">60</div>
+
+							<div class="computer-item computer-item_status_free">61</div>
+							<div class="computer-item computer-item_status_free">62</div>
+							<div class="computer-item computer-item_status_free">63</div>
+							<div class="computer-item computer-item_status_free">64</div>
+							<div class="computer-item computer-item_status_free">65</div>
+							<div class="computer-item computer-item_status_free">66</div>
+							<div class="computer-item computer-item_status_free">67</div>
+							<div class="computer-item computer-item_status_free">68</div>
+							<div class="computer-item computer-item_status_free">69</div>
+							<div class="computer-item computer-item_status_free">70</div>
+
+							<div class="computer-item computer-item_status_free">71</div>
+							<div class="computer-item computer-item_status_free">72</div>
+							<div class="computer-item computer-item_status_free">73</div>
+							<div class="computer-item computer-item_status_free">74</div>
+							<div class="computer-item computer-item_status_free">75</div>
+							<div class="computer-item computer-item_status_free">76</div>
+							<div class="computer-item computer-item_status_free">77</div>
+							<div class="computer-item computer-item_status_free">78</div>
+							<div class="computer-item computer-item_status_free">79</div>
+							<div class="computer-item computer-item_status_free">80</div>
+
+							<div class="computer-item computer-item_status_free">81</div>
+							<div class="computer-item computer-item_status_free">82</div>
+							<div class="computer-item computer-item_status_free">83</div>
+							<div class="computer-item computer-item_status_free">84</div>
+							<div class="computer-item computer-item_status_free">85</div>
+							<div class="computer-item computer-item_status_free">86</div>
+							<div class="computer-item computer-item_status_free">87</div>
+							<div class="computer-item computer-item_status_free">88</div>
+							<div class="computer-item computer-item_status_free">89</div>
+							<div class="computer-item computer-item_status_free">90</div>
+
+							<div class="computer-item computer-item_status_free">91</div>
+							<div class="computer-item computer-item_status_free">92</div>
+							<div class="computer-item computer-item_status_free">93</div>
+							<div class="computer-item computer-item_status_free">94</div>
+							<div class="computer-item computer-item_status_free">95</div>
+							<div class="computer-item computer-item_status_free">96</div>
+							<div class="computer-item computer-item_status_free">97</div>
+							<div class="computer-item computer-item_status_free">98</div>
+							<div class="computer-item computer-item_status_free">99</div>
+							<div class="computer-item computer-item_status_free">100</div>
+
+							<div class="computer-item computer-item_status_free">101</div>
+							<div class="computer-item computer-item_status_free">102</div>
+							<div class="computer-item computer-item_status_free">103</div>
+							<div class="computer-item computer-item_status_free">104</div>
+							<div class="computer-item computer-item_status_free">105</div>
+							<div class="computer-item computer-item_status_free">106</div>
+							<div class="computer-item computer-item_status_selected">107</div>
+							<div class="computer-item computer-item_status_selected">108</div>
+							<div class="computer-item computer-item_status_selected">109</div>
+							<div class="computer-item computer-item_status_selected">110</div>
+
+							<div class="computer-item computer-item_status_free">111</div>
+							<div class="computer-item computer-item_status_free">112</div>
+							<div class="computer-item computer-item_status_free">113</div>
+							<div class="computer-item computer-item_status_free">114</div>
+							<div class="computer-item computer-item_status_free">115</div>
+							<div class="computer-item computer-item_status_free">116</div>
+							<div class="computer-item computer-item_status_free">117</div>
+							<div class="computer-item computer-item_status_free">118</div>
+							<div class="computer-item computer-item_status_free">119</div>
+							<div class="computer-item computer-item_status_free">120</div>
+
+							<div class="computer-item computer-item_status_free">121</div>
+							<div class="computer-item computer-item_status_free">122</div>
+							<div class="computer-item computer-item_status_free">123</div>
+							<div class="computer-item computer-item_status_free">124</div>
+							<div class="computer-item computer-item_status_free">125</div>
+							<div class="computer-item computer-item_status_free">126</div>
+							<div class="computer-item computer-item_status_free">127</div>
+							<div class="computer-item computer-item_status_free">128</div>
+							<div class="computer-item computer-item_status_free">129</div>
+							<div class="computer-item computer-item_status_free">130</div>
+
+							<div class="computer-item computer-item_status_free">131</div>
+							<div class="computer-item computer-item_status_free">132</div>
+							<div class="computer-item computer-item_status_free">133</div>
+							<div class="computer-item computer-item_status_free">134</div>
+							<div class="computer-item computer-item_status_free">135</div>
+							<div class="computer-item computer-item_status_free">136</div>
+							<div class="computer-item computer-item_status_free">137</div>
+							<div class="computer-item computer-item_status_free">138</div>
+							<div class="computer-item computer-item_status_free">139</div>
+							<div class="computer-item computer-item_status_free">140</div>
+
+							<div class="computer-item computer-item_status_free">141</div>
+							<div class="computer-item computer-item_status_free">142</div>
+							<div class="computer-item computer-item_status_free">143</div>
+							<div class="computer-item computer-item_status_free">144</div>
+							<div class="computer-item computer-item_status_free">145</div>
+							<div class="computer-item computer-item_status_free">146</div>
+							<div class="computer-item computer-item_status_free">147</div>
+							<div class="computer-item computer-item_status_free">148</div>
+							<div class="computer-item computer-item_status_free">149</div>
+							<div class="computer-item computer-item_status_free">150</div>
+
+							<div class="computer-item computer-item_status_free">151</div>
+							<div class="computer-item computer-item_status_free">152</div>
+							<div class="computer-item computer-item_status_free">153</div>
+							<div class="computer-item computer-item_status_free">154</div>
+							<div class="computer-item computer-item_status_free">155</div>
+							<div class="computer-item computer-item_status_free">156</div>
+							<div class="computer-item computer-item_status_free">157</div>
+							<div class="computer-item computer-item_status_free">158</div>
+							<div class="computer-item computer-item_status_free">159</div>
+							<div class="computer-item computer-item_status_free">160</div>
+
+							<div class="computer-item computer-item_status_free">161</div>
+							<div class="computer-item computer-item_status_free">162</div>
+							<div class="computer-item computer-item_status_free">163</div>
+							<div class="computer-item computer-item_status_free">164</div>
+							<div class="computer-item computer-item_status_free">165</div>
+							<div class="computer-item computer-item_status_free">166</div>
+							<div class="computer-item computer-item_status_free">167</div>
+							<div class="computer-item computer-item_status_free">168</div>
+							<div class="computer-item computer-item_status_free">169</div>
+							<div class="computer-item computer-item_status_free">170</div>
+
+							<div class="computer-item computer-item_status_free">171</div>
+							<div class="computer-item computer-item_status_free">172</div>
+							<div class="computer-item computer-item_status_free">173</div>
+							<div class="computer-item computer-item_status_free">174</div>
+							<div class="computer-item computer-item_status_free">175</div>
+							<div class="computer-item computer-item_status_free">176</div>
+							<div class="computer-item computer-item_status_free">177</div>
+							<div class="computer-item computer-item_status_free">178</div>
+							<div class="computer-item computer-item_status_free">179</div>
+							<div class="computer-item computer-item_status_free">180</div>
+
+							<div class="computer-item computer-item_status_free">181</div>
+							<div class="computer-item computer-item_status_free">182</div>
+							<div class="computer-item computer-item_status_free">183</div>
+							<div class="computer-item computer-item_status_free">184</div>
+							<div class="computer-item computer-item_status_free">185</div>
+							<div class="computer-item computer-item_status_free">186</div>
+							<div class="computer-item computer-item_status_free">187</div>
+							<div class="computer-item computer-item_status_free">188</div>
+							<div class="computer-item computer-item_status_free">189</div>
+							<div class="computer-item computer-item_status_free">190</div>
+
+							<div class="computer-item computer-item_status_free">191</div>
+							<div class="computer-item computer-item_status_free">192</div>
+							<div class="computer-item computer-item_status_free">193</div>
+							<div class="computer-item computer-item_status_free">194</div>
+							<div class="computer-item computer-item_status_free">195</div>
+							<div class="computer-item computer-item_status_free">196</div>
+							<div class="computer-item computer-item_status_free">197</div>
+							<div class="computer-item computer-item_status_free">198</div>
+							<div class="computer-item computer-item_status_free">199</div>
+							<div class="computer-item computer-item_status_free">200</div>
+
+							<div class="computer-item computer-item_status_free">101</div>
+							<div class="computer-item computer-item_status_free">102</div>
+							<div class="computer-item computer-item_status_free">103</div>
+							<div class="computer-item computer-item_status_free">104</div>
+							<div class="computer-item computer-item_status_free">105</div>
+							<div class="computer-item computer-item_status_free">106</div>
+							<div class="computer-item computer-item_status_selected">107</div>
+							<div class="computer-item computer-item_status_selected">108</div>
+							<div class="computer-item computer-item_status_selected">109</div>
+							<div class="computer-item computer-item_status_selected">110</div>
+
+							<div class="computer-item computer-item_status_free">111</div>
+							<div class="computer-item computer-item_status_free">112</div>
+							<div class="computer-item computer-item_status_free">113</div>
+							<div class="computer-item computer-item_status_free">114</div>
+							<div class="computer-item computer-item_status_free">115</div>
+							<div class="computer-item computer-item_status_free">116</div>
+							<div class="computer-item computer-item_status_free">117</div>
+							<div class="computer-item computer-item_status_free">118</div>
+							<div class="computer-item computer-item_status_free">119</div>
+							<div class="computer-item computer-item_status_free">120</div>
+
+							<div class="computer-item computer-item_status_free">121</div>
+							<div class="computer-item computer-item_status_free">122</div>
+							<div class="computer-item computer-item_status_free">123</div>
+							<div class="computer-item computer-item_status_free">124</div>
+							<div class="computer-item computer-item_status_free">125</div>
+							<div class="computer-item computer-item_status_free">126</div>
+							<div class="computer-item computer-item_status_free">127</div>
+							<div class="computer-item computer-item_status_free">128</div>
+							<div class="computer-item computer-item_status_free">129</div>
+							<div class="computer-item computer-item_status_free">130</div>
+
+							<div class="computer-item computer-item_status_free">131</div>
+							<div class="computer-item computer-item_status_free">132</div>
+							<div class="computer-item computer-item_status_free">133</div>
+							<div class="computer-item computer-item_status_free">134</div>
+							<div class="computer-item computer-item_status_free">135</div>
+							<div class="computer-item computer-item_status_free">136</div>
+							<div class="computer-item computer-item_status_free">137</div>
+							<div class="computer-item computer-item_status_free">138</div>
+							<div class="computer-item computer-item_status_free">139</div>
+							<div class="computer-item computer-item_status_free">140</div>
+
+							<div class="computer-item computer-item_status_free">141</div>
+							<div class="computer-item computer-item_status_free">142</div>
+							<div class="computer-item computer-item_status_free">143</div>
+							<div class="computer-item computer-item_status_free">144</div>
+							<div class="computer-item computer-item_status_free">145</div>
+							<div class="computer-item computer-item_status_free">146</div>
+							<div class="computer-item computer-item_status_free">147</div>
+							<div class="computer-item computer-item_status_free">148</div>
+							<div class="computer-item computer-item_status_free">149</div>
+							<div class="computer-item computer-item_status_free">150</div>
+
+							<div class="computer-item computer-item_status_free">151</div>
+							<div class="computer-item computer-item_status_free">152</div>
+							<div class="computer-item computer-item_status_free">153</div>
+							<div class="computer-item computer-item_status_free">154</div>
+							<div class="computer-item computer-item_status_free">155</div>
+							<div class="computer-item computer-item_status_free">156</div>
+							<div class="computer-item computer-item_status_free">157</div>
+							<div class="computer-item computer-item_status_free">158</div>
+							<div class="computer-item computer-item_status_free">159</div>
+							<div class="computer-item computer-item_status_free">160</div>
+
+							<div class="computer-item computer-item_status_free">161</div>
+							<div class="computer-item computer-item_status_free">162</div>
+							<div class="computer-item computer-item_status_free">163</div>
+							<div class="computer-item computer-item_status_free">164</div>
+							<div class="computer-item computer-item_status_free">165</div>
+							<div class="computer-item computer-item_status_free">166</div>
+							<div class="computer-item computer-item_status_free">167</div>
+							<div class="computer-item computer-item_status_free">168</div>
+							<div class="computer-item computer-item_status_free">169</div>
+							<div class="computer-item computer-item_status_free">170</div>
+
+							<div class="computer-item computer-item_status_free">171</div>
+							<div class="computer-item computer-item_status_free">172</div>
+							<div class="computer-item computer-item_status_free">173</div>
+							<div class="computer-item computer-item_status_free">174</div>
+							<div class="computer-item computer-item_status_free">175</div>
+							<div class="computer-item computer-item_status_free">176</div>
+							<div class="computer-item computer-item_status_free">177</div>
+							<div class="computer-item computer-item_status_free">178</div>
+							<div class="computer-item computer-item_status_free">179</div>
+							<div class="computer-item computer-item_status_free">180</div>
+
+							<div class="computer-item computer-item_status_free">181</div>
+							<div class="computer-item computer-item_status_free">182</div>
+							<div class="computer-item computer-item_status_free">183</div>
+							<div class="computer-item computer-item_status_free">184</div>
+							<div class="computer-item computer-item_status_free">185</div>
+							<div class="computer-item computer-item_status_free">186</div>
+							<div class="computer-item computer-item_status_free">187</div>
+							<div class="computer-item computer-item_status_free">188</div>
+							<div class="computer-item computer-item_status_free">189</div>
+							<div class="computer-item computer-item_status_free">190</div>
+
+							<div class="computer-item computer-item_status_free">191</div>
+							<div class="computer-item computer-item_status_free">192</div>
+							<div class="computer-item computer-item_status_free">193</div>
+							<div class="computer-item computer-item_status_free">194</div>
+							<div class="computer-item computer-item_status_free">195</div>
+							<div class="computer-item computer-item_status_free">196</div>
+							<div class="computer-item computer-item_status_free">197</div>
+							<div class="computer-item computer-item_status_free">198</div>
+							<div class="computer-item computer-item_status_free">199</div>
+							<div class="computer-item computer-item_status_free">200</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-club-map__column-02">
+					<div class="manager-block">
+						<!-- Следует добавить disactive-manager-block класс для использования маски перекрывающей весь контент. -->
+
+						<div class="disactive-mask"></div>
+						<div class="tabs-manager">
+							<div class="tabs-manager__title">
+								<a href="#">
+									<img alt="Prev" src="assets/icons/arrow_left.svg">
+								</a>
+								<p class="text text_color_white text_size_l">Computer</p>
+								<a href="#">
+									<img alt="Next" src="assets/icons/arrow_right.svg">
+								</a>
+							</div>
+							<div class="tabs-manager__tabs">
+								<div class="tabs-manager__tab content-active">
+									<span class="tabs-manager__tab-close">
+										<img alt="Close" src="assets/icons/close.svg">
+									</span>
+									<span class="tabs-manager__tab-number">22</span>
+								</div>
+								<div class="tabs-manager__tab">
+									<span class="tabs-manager__tab-close">
+										<img alt="Close" src="assets/icons/close.svg">
+									</span>
+									<span class="tabs-manager__tab-number">23</span>
+								</div>
+								<div class="tabs-manager__tab">
+									<span class="tabs-manager__tab-close">
+										<img alt="Close" src="assets/icons/close.svg">
+									</span>
+									<span class="tabs-manager__tab-number">28</span>
+								</div>
+								<div class="tabs-manager__tab">
+									<span class="tabs-manager__tab-close">
+										<img alt="Close" src="assets/icons/close.svg">
+									</span>
+									<span class="tabs-manager__tab-number">30</span>
+								</div>
+								<div class="tabs-manager__tab">
+									<span class="tabs-manager__tab-close">
+										<img alt="Close" src="assets/icons/close.svg">
+									</span>
+									<span class="tabs-manager__tab-number">42</span>
+								</div>
+								<div class="tabs-manager__tab">
+									<span class="tabs-manager__tab-close">
+										<img alt="Close" src="assets/icons/close.svg">
+									</span>
+									<span class="tabs-manager__tab-number">43</span>
+								</div>
+								<div class="tabs-manager__tab">
+									<span class="tabs-manager__tab-close">
+										<img alt="Close" src="assets/icons/close.svg">
+									</span>
+									<span class="tabs-manager__tab-number">22</span>
+								</div>
+								<div class="tabs-manager__tab">
+									<span class="tabs-manager__tab-close">
+										<img alt="Close" src="assets/icons/close.svg">
+									</span>
+									<span class="tabs-manager__tab-number">23</span>
+								</div>
+								<div class="tabs-manager__tab">
+									<span class="tabs-manager__tab-close">
+										<img alt="Close" src="assets/icons/close.svg">
+									</span>
+									<span class="tabs-manager__tab-number">28</span>
+								</div>
+								<div class="tabs-manager__tab">
+									<span class="tabs-manager__tab-close">
+										<img alt="Close" src="assets/icons/close.svg">
+									</span>
+									<span class="tabs-manager__tab-number">30</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Данный блок кода сипользуется когда пользователь не выбрал ни одного компьютера. -->
+						<!-- <div class="manager-block__information">
+							<div class="manager-block__information-title">
+								<p class="text text_color_white text_size_l">Computer</p>
+							</div>
+							<p class="text text_color_white text_size_m">No computer selected</p>
+						</div> -->
+
+						<div class="info-table manager-block__info-table">
+							<div class="info-table__title">
+								<p class="text text_color_white_translucent text_size_m">Info</p>
+							</div>
+							<div class="info-table__rows">
+								<div class="info-table__row">
+									<div class="info-table__column">State</div>
+									<div class="info-table__column">Use</div>
+								</div>
+								<div class="info-table__row">
+									<div class="info-table__column">Status</div>
+									<div class="info-table__column">OK</div>
+								</div>
+								<div class="info-table__row">
+									<div class="info-table__column">User</div>
+									<div class="info-table__column">Admin</div>
+								</div>
+								<div class="info-table__row">
+									<div class="info-table__column">Time remaining</div>
+									<div class="info-table__column">12:25</div>
+								</div>
+								<div class="info-table__row">
+									<div class="info-table__column">Tariff</div>
+									<div class="info-table__column">Small</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="manager-block__id">
+							<p class="text text_color_white_translucent text_size_m manager-block__id__text">ID</p>
+							<input type="text" name="id" class="input manager-block__input" placeholder="0000">
+						</div>
+
+						<a href="#" class="button button_size_l button_outlined">VIP</a>
+
+						<div class="manager-block__controls">
+							<div class="manager-block__controls-title">
+								<p class="text text_color_white_translucent text_size_m">Manage</p>
+							</div>
+							<div class="manager-block__controls-buttons">
+								<a href="#" class="button button_size_l button_outlined">Give a warning</a>
+								<div class="add-time manager-block__add-time">
+									<select class="select select_size_m">
+										<option>- 5</option>
+										<option>- 10</option>
+										<option>+ 5</option>
+										<option>+ 10</option>
+									</select>
+									<a href="#" class="button button_size_l button_outlined">Add time</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="manager-block__menu">
+							<a href="#" class="link-icon manager-block__link-icon">
+								<div class="link-icon__icon">
+									<img alt="On/Off" src="assets/icons/on.svg">
+									<img alt="On/Off" src="assets/icons/on.svg">
+								</div>
+								<span class="link-icon__link">on</span>
+							</a>
+							<a href="#" class="link-icon manager-block__link-icon">
+								<div class="link-icon__icon">
+									<img alt="Reboot" src="assets/icons/reboot.svg">
+									<img alt="Reboot" src="assets/icons/reboot.svg">
+								</div>
+								<span class="link-icon__link">Reboot</span>
+							</a>
+							<a href="#" class="link-icon manager-block__link-icon">
+								<div class="link-icon__icon">
+									<img alt="Sleep" src="assets/icons/sleep.svg">
+									<img alt="Sleep" src="assets/icons/sleep.svg">
+								</div>
+								<span class="link-icon__link">Sleep</span>
+							</a>
+							<a href="#" class="link-icon manager-block__link-icon">
+								<div class="link-icon__icon">
+									<img alt="Block" src="assets/icons/block.svg">
+									<img alt="Block" src="assets/icons/block.svg">
+								</div>
+								<span class="link-icon__link">Block</span>
+							</a>
+							<a href="#" class="link-icon manager-block__link-icon">
+								<div class="link-icon__icon">
+									<img alt="Book" src="assets/icons/book.svg">
+									<img alt="Book" src="assets/icons/book.svg">
+								</div>
+								<span class="link-icon__link">Book</span>
+							</a>
+							<a href="#" class="link-icon manager-block__link-icon">
+								<div class="link-icon__icon">
+									<img alt="Log out" src="assets/icons/logout.svg">
+									<img alt="Log out" src="assets/icons/logout.svg">
+								</div>
+								<span class="link-icon__link">Log out</span>
+							</a>
+							<a href="#" class="link-icon manager-block__link-icon">
+								<div class="link-icon__icon">
+									<img alt="RDP" src="assets/icons/rdp.svg">
+									<img alt="RDP" src="assets/icons/rdp.svg">
+								</div>
+								<span class="link-icon__link">RDP</span>
+							</a>
+							<a href="#" class="link-icon manager-block__link-icon">
+								<div class="link-icon__icon">
+									<!-- <img alt="Club" src="assets/icons/club.svg">
+									<img alt="Club" src="assets/icons/club.svg"> -->
+								</div>
+								<span class="link-icon__link">User admin (no shell)</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JavaScript -->
+<script src="script/javascript.js"></script>
+
+</body>
+</html>

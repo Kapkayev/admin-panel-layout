@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin — Manage Shop</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+	<!-- UI-kit -->
+	<link rel="stylesheet"  href="css/library.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet"  href="css/magnific-popup.css">
+	<!-- Styles -->
+	<link rel="stylesheet"  href="css/main.css">
+	<link rel="stylesheet"  href="css/media.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="header">
+		<a href="#" class="logo header__logo">
+			<img alt="Logotype" src="assets/logo.svg">
+		</a>
+		<div class="search-input header__search-input">
+			<input 
+				class="search-input__input" 
+				type="text" 
+				name="search-input"
+				placeholder="Search" 
+			>
+		</div>
+		<div class="text text_color_white_translucent text_size_m text_weight_lighter header__text">
+			Club №3 Address Batyra st. 115/1
+		</div>
+		<div class="text text_color_white_translucent text_size_l text_weight_lighter header__text">
+			29.01.2023, 18:17
+		</div>
+		<a href="#" class="link-icon header__link-icon">
+			<div class="link-icon__icon">
+				<img alt="Profile" src="assets/icons/profile.svg">
+				<img alt="Profile" src="assets/icons/profile.svg">
+			</div>
+			<span class="link-icon__link">Profile</span>
+		</a>
+	</div>
+	<div class="main">
+		<div class="sidebar">
+			<nav class="sidebar__sidebar-menu">
+				<ul>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Club" src="assets/icons/club.svg">
+								<img alt="Club" src="assets/icons/club.svg">
+							</div>
+							<span class="link-icon__link">Club</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon active-sidebar-link">
+							<div class="link-icon__icon">
+								<img alt="Shop" src="assets/icons/shop.svg">
+								<img alt="Shop" src="assets/icons/shop.svg">
+							</div>
+							<span class="link-icon__link">Shop</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Stats" src="assets/icons/stats.svg">
+								<img alt="Stats" src="assets/icons/stats.svg">
+							</div>
+							<span class="link-icon__link">Stats</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Cashbox" src="assets/icons/cashbox.svg">
+								<img alt="Cashbox" src="assets/icons/cashbox.svg">
+							</div>
+							<span class="link-icon__link">Cashbox</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="link-icon">
+				<div class="link-icon__icon">
+					<img alt="Log out" src="assets/icons/logout.svg">
+					<img alt="Log out" src="assets/icons/logout.svg">
+				</div>
+				<span class="link-icon__link">Log out</span>
+			</a>
+		</div>
+		<div class="content">
+			<div class="page-shop">
+				<div class="page-shop__row-01"></div>
+				<div class="page-shop__row-02">
+					<div class="page-shop__column-01">
+
+						<div class="table page-shop__table">
+							<div class="table__title">
+								<div class="table__row-title">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">№</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Name</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Code</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Type</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Status</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Manage</p>
+									</div>
+								</div>
+							</div>
+							<div class="table__body">
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 6</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0001</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">2</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 4</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0002</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">3</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 3</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0003</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">4</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 2</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0004</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">5</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 6</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0005</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">6</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 4</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0006</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 2</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0007</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">8</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 9</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0008</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">9</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 2</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0009</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">10</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 2</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0010</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">11</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0011</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">12</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 4</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0012</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">13</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 2</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0013</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">14</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0014</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">15</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 2</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0015</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+								<div class="table__row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">16</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Coca-Cola, 0.5</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">$ 1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">0016</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Flex</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">Regular</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<div class="table__button table__button-active-indicator">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+											<img alt="on/off" src="assets/icons/active-indicator.svg">
+										</div>
+										<div class="table__button table__button-delete">
+											<img alt="Delete" src="assets/icons/trash.svg">
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="page-shop__actions">
+							<a href="#" class="button button_size_m button_outlined page-shop__button-middle">Add new product</a>
+						</div>
+					</div>
+					<div class="page-shop__column-02">
+						<div class="setting-block">
+							<div>
+								<div class="setting-block__header">
+									<p class="text text_color_white_translucent text_size_l text_weight_lighter">Product setting</p>
+								</div>
+								<div class="setting-block__content">
+
+									<div class="setting-block__product">
+										<div class="setting-block__product-row-01">
+											<div class="setting-block__product-image">
+												<img alt="Product demo" src="assets/product_demo.png">
+												<div class="setting-block__product-edit-image">
+													<img alt="Edit demo" src="assets/icons/edit.svg">
+												</div>
+											</div>
+											<div class="setting-block__product-form-01">
+												<div class="setting-block__form-column">
+													<div class="setting-block__form-column-input">
+														<p class="text text_color_white_translucent text_weight_lighter text_size_m setting-block__text">Product name</p>
+														<input type="text" name="status" placeholder="Product name" class="input input_size_xl">
+													</div>
+													<div class="setting-block__form-column-input">
+														<p class="text text_color_white_translucent text_weight_lighter text_size_m setting-block__text">Category</p>
+														<input type="text" name="status" placeholder="Category" class="input input_size_xl">
+													</div>
+													<div class="setting-block__form-column-input">
+														<p class="text text_color_white_translucent text_weight_lighter text_size_m setting-block__text">Price</p>
+														<input type="text" name="status" placeholder="Price" class="input input_size_xl">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="setting-block__product-row-02">
+											<p class="text text_color_white text_size_s text_weight_lighter">Available 108</p>
+										</div>
+										<div class="setting-block__product-row-03">
+											<div class="setting-block__form-row shop__setting-block__form-row">
+												<div class="setting-block__form-row-input">
+													<p class="text text_color_white_translucent text_weight_lighter text_size_m setting-block__text">Age restrictions</p>
+													<input type="text" name="status" placeholder="Age restrictions" class="input input_size_m">
+													<p class="text text_color_white_translucent text_weight_lighter text_size_xs setting-block__text">Age affects display in the list</p>
+												</div>
+												<div class="setting-block__form-row-input">
+													<p class="text text_color_white_translucent text_weight_lighter text_size_m setting-block__text">Code</p>
+													<input type="text" name="status" placeholder="Code" class="input input_size_m">
+												</div>
+												<div class="setting-block__barcode">
+													<p class="text text_color_white text_weight_lighter text_size_m setting-block__text">Barcode</p>
+													<img alt="Barcode" src="assets/barcode.png">
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="setting-block__footer">
+								<a href="#" class="button button_size_m button_outlined page-shop__button-large">Remove from product list</a>
+								<a href="#" class="button button_size_m button_outlined page-shop__button-middle">Delete product</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- JavaScript -->
+<script src="script/javascript.js"></script>
+
+</body>
+</html>
