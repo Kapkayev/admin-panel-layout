@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin — Manage Cashbox</title>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+	<!-- UI-kit -->
+	<link rel="stylesheet"  href="css/library.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet"  href="css/magnific-popup.css">
+	<!-- Styles -->
+	<link rel="stylesheet"  href="css/main.css">
+	<link rel="stylesheet"  href="css/media.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="header">
+		<a href="#" class="logo header__logo">
+			<img alt="Logotype" src="assets/logo.svg">
+		</a>
+		<div class="search-input header__search-input">
+			<input 
+				class="search-input__input" 
+				type="text" 
+				name="search-input"
+				placeholder="Search" 
+			>
+		</div>
+		<div class="text text_color_white_translucent text_size_m text_weight_lighter header__text">
+			Club №3 Address Batyra st. 115/1
+		</div>
+		<div class="text text_color_white_translucent text_size_l text_weight_lighter header__text">
+			29.01.2023, 18:17
+		</div>
+		<a href="#" class="link-icon header__link-icon">
+			<div class="link-icon__icon">
+				<img alt="Profile" src="assets/icons/profile.svg">
+				<img alt="Profile" src="assets/icons/profile.svg">
+			</div>
+			<span class="link-icon__link">Profile</span>
+		</a>
+	</div>
+	<div class="main">
+		<div class="sidebar">
+			<nav class="sidebar__sidebar-menu">
+				<ul>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Club" src="assets/icons/club.svg">
+								<img alt="Club" src="assets/icons/club.svg">
+							</div>
+							<span class="link-icon__link">Club</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Shop" src="assets/icons/shop.svg">
+								<img alt="Shop" src="assets/icons/shop.svg">
+							</div>
+							<span class="link-icon__link">Shop</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon">
+							<div class="link-icon__icon">
+								<img alt="Stats" src="assets/icons/stats.svg">
+								<img alt="Stats" src="assets/icons/stats.svg">
+							</div>
+							<span class="link-icon__link">Stats</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link-icon sidebar-menu__link-icon active-sidebar-link">
+							<div class="link-icon__icon">
+								<img alt="Cashbox" src="assets/icons/cashbox.svg">
+								<img alt="Cashbox" src="assets/icons/cashbox.svg">
+							</div>
+							<span class="link-icon__link">Cashbox</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="link-icon">
+				<div class="link-icon__icon">
+					<img alt="Log out" src="assets/icons/logout.svg">
+					<img alt="Log out" src="assets/icons/logout.svg">
+				</div>
+				<span class="link-icon__link">Log out</span>
+			</a>
+		</div>
+		<div class="content">
+			
+			<div class="modal-booking mfp-hide" id="modal-booking">
+				<div class="modal-booking__head">
+					<img alt="Close" src="assets/icons/close.svg" class="close-modal">
+				</div>
+				<div class="modal-booking__body">
+					<div class="modal-booking__title">
+						<p class="text text_color_white text_size_l">Booking</p>
+						<p class="text text_color_white text_size_l">26 January 10:00</p>
+					</div>
+					<div class="modal-booking__table modal-booking__modal-booking__table">
+						<div class="table ">
+							<div class="table__title">
+								<div class="table__row-title">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">№</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Comp. <br> ID</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">User <br> (Login or phone number)</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Time <br> amount</p>
+									</div>
+								</div>
+							</div>
+							<div class="table__body">
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">7</p>
+									</div>
+									<div class="table__column table__column_size_xl table__column_padding_m">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_none">
+										<input type="text" name="login" class="input input_size_xl" placeholder="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-booking__footer">
+					<a href="#" class="button button_size_m button_outlined">Book</a>
+				</div>
+			</div>
+
+			<div class="modal-club mfp-hide" id="modal-club">
+				<div class="modal-club__head">
+					<img alt="Close" src="assets/icons/close.svg" class="close-modal">
+				</div>
+				<div class="modal-club__body">
+					<div class="modal-club__title">
+						<p class="text text_color_white text_size_l">Club</p>
+					</div>
+					<div class="modal-club__table modal-club__modal-booking__table">
+						<div class="table ">
+							<div class="table__title">
+								<div class="table__row-title">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">№</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Club</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Address</p>
+									</div>
+								</div>
+							</div>
+							<div class="table__body">
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+								<div class="table__row active-row">
+									<div class="table__column table__column_size_xs table__column_padding_m">
+										<p class="text text_color_white text_size_s text_weight_lighter">1</p>
+									</div>
+									<div class="table__column table__column_size_s table__column_padding_m">
+										<p class="text text_color_white text_size_m text_weight_lighter">PLAY</p>
+									</div>
+									<div class="table__column table__column_size_xxl table__column_padding_m">
+										<p class="text text_color_white_translucent text_size_m text_weight_lighter">Karaganda Batyra st. 115/1</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#modal-booking" class="open-booking">Modal Booking</a>
+
+			<a href="#modal-club" class="open-club">Modal Club</a>
+
+		</div>
+	</div>
+</div>
+
+<!-- jQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+
+<!-- Magnific Popup -->
+<script src="script/magnific-popup.js"></script>
+
+<!-- JavaScript -->
+<script src="script/javascript.js"></script>
+
+</body>
+</html>

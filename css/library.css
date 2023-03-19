@@ -423,6 +423,9 @@
   width: 100%;
   max-width: 260px;
 }
+.table .table__column_size_xxl {
+  width: 100%;
+}
 .table .table__column_padding_none {
   padding: 0px 0px;
 }
